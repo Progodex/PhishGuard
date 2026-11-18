@@ -1,0 +1,76 @@
+{
+  "dataset_size": 88647,
+  "phishing": 30647,
+  "legitimate": 58000,
+  "train_size": 70917,
+  "test_size": 17730,
+  "n_features": 39,
+  "best_model": "Random Forest",
+  "models": {
+    "Logistic Regression": {
+      "accuracy": 0.8967851099830795,
+      "precision": 0.8955114054451803,
+      "recall": 0.7941272430668842,
+      "f1": 0.8417776240705516,
+      "roc_auc": 0.9575481099173089,
+      "train_seconds": 0.25975656509399414,
+      "latency_ms": 1.623685359954834,
+      "model_mb": 0.003537
+    },
+    "Naive Bayes": {
+      "accuracy": 0.7290468133107727,
+      "precision": 0.9072481572481572,
+      "recall": 0.24094616639477978,
+      "f1": 0.3807682392369167,
+      "roc_auc": 0.9239534370253699,
+      "train_seconds": 0.042925119400024414,
+      "latency_ms": 1.2702608108520508,
+      "model_mb": 0.002983
+    },
+    "Decision Tree": {
+      "accuracy": 0.9261139311900733,
+      "precision": 0.90736984448952,
+      "recall": 0.8756933115823817,
+      "f1": 0.8912502075377718,
+      "roc_auc": 0.9552956418405805,
+      "train_seconds": 0.1540217399597168,
+      "latency_ms": 1.1261522769927979,
+      "model_mb": 0.290665
+    },
+    "Gradient Boosting": {
+      "accuracy": 0.9287648054145516,
+      "precision": 0.9017665510979033,
+      "recall": 0.8910277324632953,
+      "f1": 0.8963649790760646,
+      "roc_auc": 0.9779713323395398,
+      "train_seconds": 1.3017539978027344,
+      "latency_ms": 2.0553529262542725,
+      "model_mb": 0.37356
+    },
+    "Random Forest": {
+      "accuracy": 0.9388042865200226,
+      "precision": 0.9244489315160693,
+      "recall": 0.8962479608482871,
+      "f1": 0.9101300422430216,
+      "roc_auc": 0.979430739157338,
+      "train_seconds": 1.777745008468628,
+      "latency_ms": 24.327155351638794,
+      "model_mb": 57.107385
+    }
+  },
+  "confusion_matrix": [
+    [
+      11151,
+      449
+    ],
+    [
+      636,
+      5494
+    ]
+  ],
+  "full_feature_baseline": {
+    "accuracy": 0.969825155104343,
+    "f1": 0.9564792971609859,
+    "n_features": 111
+  }
+}
